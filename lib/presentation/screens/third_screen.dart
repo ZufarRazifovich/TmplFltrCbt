@@ -42,7 +42,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 return Column(
                   children: [
                     Text(
-                      'kol vo'
+                      'kol voo'
                     ),
                     Text(
                     state.counterValue.toString(),
