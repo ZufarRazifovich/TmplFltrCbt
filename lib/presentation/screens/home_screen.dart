@@ -59,8 +59,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   onPressed:(){Navigator.of(context).pushNamed('/three');},
                   color: Colors.blueAccent,
                 ),
+
               ],
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              MaterialButton(child: Text('sign in'),
+                onPressed:(){Navigator.of(context).pushNamed('/login');},
+                color: Colors.blueAccent,
+              ),
+              SizedBox(height: 100, width: 30,),
+              MaterialButton(child: Text('request'),
+                onPressed:(){Navigator.of(context).pushNamed('/four');},
+                color: Colors.blueAccent,
+              ),
+            ],),
             BlocConsumer<CounterCubit, CounterState>(
               listener: (context, state) {
                 if (state.counterValue > 0) {

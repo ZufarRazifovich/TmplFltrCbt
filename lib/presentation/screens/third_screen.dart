@@ -7,7 +7,6 @@ class ThirdScreen extends StatefulWidget {
   const ThirdScreen({Key? key, required this.title}) : super(key: key);
 
 
-
   final String title;
 
   @override
@@ -42,14 +41,14 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 return Column(
                   children: [
                     Text(
-                      'kol vooo'
+                        'kol vooo'
                     ),
                     Text(
-                    state.counterValue.toString(),
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .headline4,
+                      state.counterValue.toString(),
+                      style: Theme
+                          .of(context)
+                          .textTheme
+                          .headline4,
                     )
                   ],
                 );

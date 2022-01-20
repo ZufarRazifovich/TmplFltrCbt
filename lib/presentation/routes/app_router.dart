@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:proj2/presentation/screens/four_screen.dart';
 
 import 'package:proj2/presentation/screens/home_screen.dart';
 import 'package:proj2/presentation/screens/second_screen.dart';
 import 'package:proj2/presentation/screens/third_screen.dart';
+import 'package:proj2/presentation/screens/weather_screen.dart';
 
 class AppRouter{
   Route? onGenerateRoute(RouteSettings routerSettings){
@@ -16,6 +18,12 @@ class AppRouter{
         break;
       case '/three':
         return MaterialPageRoute(builder: (_)=>ThirdScreen(title: 'Three',));
+        break;
+        case '/four':
+        return MaterialPageRoute(builder: (_)=>FourScreen(title: 'make screen',));
+        break;
+        case '/login':
+        return MaterialPageRoute(builder: (_)=>WeatherScreen(title: 'auth screen',));
         break;
 
 
